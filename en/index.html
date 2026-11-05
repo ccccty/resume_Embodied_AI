@@ -102,7 +102,7 @@
             At SAST I am responsible for a multi-source fusion algorithm refactor that brings point-cloud, infrared and visible-light data into a unified processing framework, replacing the previous cascaded pipeline. The approach passed review by SASTIND and saved the client over ¥1 million on a single project, with an official application certificate. I took part in the full project lifecycle: proposal argumentation, design review, model training, migration of algorithms onto a domestic hardware platform, and post-launch quality maintenance. Earlier, at Huantian Smart Technology and the Turing AI Research Institute, I developed algorithms for perception, prediction and planning.
           </p>
           <p>
-            I hold 2 granted and 6 pending patents, with one SCI Q2 paper, two EI-indexed papers and one SPIE conference paper. Outside work I maintain open-source tooling for reusable engineering methods, including a research-proposal writing and checking toolkit and a job-posting analysis and knowledge-organisation toolchain.
+            I hold 2 granted and 6 pending patents, with one SCI Q2 paper, two EI-indexed papers and one SPIE conference paper. Outside work I maintain open-source tooling for reusable engineering methods, including a research-proposal writing and checking toolkit and a spaced-repetition engineering concept library.
           </p>
         </div>
 
@@ -235,6 +235,31 @@
           <div class="card__links">
             <a href="https://fishros.org.cn/forum/category/42/fishbot%E5%9B%9B%E9%A9%B1%E6%9C%BA%E5%99%A8%E4%BA%BAv2" target="_blank" rel="noopener">Platform docs</a>
             <a href="#contact">Get in touch</a>
+          </div>
+        </article>
+
+        <article class="card card--wide reveal">
+          <div class="card__top">
+            <span class="tag">World Model · Multimodal Simulation</span>
+            <span class="card__date">2026</span>
+          </div>
+          <h3 class="card__title">
+            <a href="https://github.com/ccccty/RGB_SAR_LIDAR_SIMU" target="_blank" rel="noopener">Multimodal World Model: Unified 3D Scene, Multi-Sensor Observation Generation</a>
+          </h3>
+          <p class="card__desc">
+            A parameterised 3D world built by physical simulation serves as the data substrate: given a 3D model, observation geometry, target motion and weather state, it renders visible light, infrared (MWIR / LWIR), stripmap SAR, millimetre-wave radar range–Doppler images and LiDAR point clouds offline. All modalities share one world and one set of 3D-box labels, so cross-modal registration follows directly from projection and datasets export to YOLO / COCO. World state — weather, range, interference patterns — is adjustable and reproducible, filling multimodal sample gaps that real collection cannot cover and closing the data loop for perception training and fusion validation. Implemented in pure Python with headless Blender; no GPU or network required.
+          </p>
+          <div class="card__stack">
+            <span class="chip">World model</span>
+            <span class="chip">Multimodal observation</span>
+            <span class="chip">SAR / mmWave simulation</span>
+            <span class="chip">Cross-modal registration</span>
+            <span class="chip">YOLO / COCO export</span>
+            <span class="chip">Headless Blender</span>
+          </div>
+          <div class="card__links">
+            <a href="https://github.com/ccccty/RGB_SAR_LIDAR_SIMU" target="_blank" rel="noopener">Repository</a>
+            <a href="https://ccccty.github.io/RGB_SAR_LIDAR_SIMU/" target="_blank" rel="noopener">Live dashboard</a>
           </div>
         </article>
 
@@ -425,31 +450,6 @@
       </div>
 
       <div class="projects">
-        <article class="card card--wide reveal">
-          <div class="card__top">
-            <span class="tag">Toolkit · MIT</span>
-            <span class="card__date">2026</span>
-          </div>
-          <h3 class="card__title">
-            <a href="https://github.com/ccccty/boss_find_skill" target="_blank" rel="noopener">boss_find_skill: job-posting analysis toolchain for tracking technological development</a>
-          </h3>
-          <p class="card__desc">
-            A toolchain for tracking technological development through job postings. The analysis stage computes statistics over posting text and extracts high-frequency terms, identifying newly emerging technical directions and engineering concepts from changes in hiring requirements. The learning stage organises those concepts into spaced-repetition cards for continuous follow-up. The toolchain also provides resume-based match scoring and a ranked shortlist.
-          </p>
-          <div class="card__stack">
-            <span class="chip">Technology trend detection</span>
-            <span class="chip">Concept extraction</span>
-            <span class="chip">Match scoring</span>
-            <span class="chip">Spaced repetition</span>
-            <span class="chip">HTML reports</span>
-          </div>
-          <div class="card__links">
-            <a href="https://github.com/ccccty/boss_find_skill" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5h4.5"/></svg>
-              View repository
-            </a>
-          </div>
-        </article>
 
         <article class="card reveal">
           <div class="card__top">
