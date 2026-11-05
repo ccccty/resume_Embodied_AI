@@ -17,3 +17,6 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 根目录导出的 PDF 副本（assets 内已有一份）
+/崔天一-*.pdf
